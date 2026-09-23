@@ -14,12 +14,10 @@ class Student:
         elif self.grade >= 60:
             return "D"
         else:
-            return "F"
-
+            return "f"
     def to_dict(self):
         return {
             "name": self.name,
             "subject": self.subject,
             "grade": self.grade,
-            "letter": self.get_letter_grade()
-        }
+            "letter": self.get_letter_grade()}
