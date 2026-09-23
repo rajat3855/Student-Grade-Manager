@@ -44,7 +44,6 @@ def subject_average():
         print(f"\nNo students found for {subject}!")
     else:
         print(f"\nAverage grade for {subject}: {avg}")
-
 def remove_student():
     view_students()
     try:
@@ -61,7 +60,6 @@ def main():
     while True:
         show_menu()
         choice=input("Enter your choice (1-5): ")
-
         if choice == "1":
             add_new_student()
         elif choice == "2":
@@ -75,6 +73,5 @@ def main():
             break
         else:
             print("\nInvalid choice! Please enter 1-5.")
-
 if __name__ == "__main__":
     main()
